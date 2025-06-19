@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const Message = require('../models/Message');
-const ExpiredToken = require('../models/ExpiredToken');
-const Chat = require('../models/Chat');
+const Message = require('../models/message');
+const ExpiredToken = require('../models/expiredtoken');
+const Chat = require('../models/chat');
 
 // ✅ Mesajları getir (token geçerliyse)
 router.get('/messages/:roomId', async (req, res) => {
